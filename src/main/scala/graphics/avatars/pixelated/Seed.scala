@@ -1,4 +1,4 @@
-package graphics.avatars.pixelated.seeds;
+package graphics.avatars.pixelated;
 
 import com.roundeights.hasher.Implicits._
 import scala.language.postfixOps
