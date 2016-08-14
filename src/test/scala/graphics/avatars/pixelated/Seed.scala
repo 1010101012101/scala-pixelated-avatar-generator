@@ -9,17 +9,7 @@ class SeedSpec extends FlatSpec with Matchers {
   "Seed" should "be able to be generated from a string" in {
     val seedString = "Hello"
     val seed = new Seed(seedString)
-    seed.seedString should be (seedString)
     seed.seedHash should be (Md5Hash("8b1a9953c4611296a827abf8c47804d7"))
-  }
-
-}
-
-class SeedCheck extends Properties("Seed") {
-
-  property("retains seed string") = forAll {(s: String) =>
-    val seed = new Seed(s)
-    seed.seedString == s
   }
 
 }
